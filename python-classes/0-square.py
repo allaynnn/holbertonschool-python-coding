@@ -1,24 +1,23 @@
 #!/usr/bin/python3
 """
-This module defines the Square class which represents a square.
+This module defines a class Square that represents a square.
 
-A square is a geometric shape with four equal sides. This class currently
-defines a square by its size, stored as a private attribute.
+A square has equal sides and this class encapsulates the size of the square
+as a private attribute to ensure encapsulation and future control.
 """
 
 class Square:
     """
-    This class defines a square by its size.
+    Represents a square with a private size attribute.
 
-    The size attribute is private to ensure that the value is controlled
-    internally. This will help prevent direct modification and allow future
-    enhancements such as validation.
+    The size of the square is stored privately to restrict direct access
+    and modifications, enabling future validation and control.
     """
     def __init__(self, size):
         """
-        Initialize a Square instance.
+        Initializes a new Square instance with a given size.
 
         Args:
-            size (int): The size of one side of the square (no type/value checks).
+            size (int): The size of one side of the square (no validation).
         """
         self.__size = size
